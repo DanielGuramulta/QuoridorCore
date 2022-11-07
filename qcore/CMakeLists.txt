@@ -21,7 +21,7 @@ add_library(qcore SHARED
 target_compile_definitions(qcore PRIVATE "QCORE_API_EXPORT")
 target_include_directories(qcore PUBLIC include)
 target_link_libraries(qcore Threads::Threads ${CMAKE_DL_LIBS})
-if( NOT MSVC )
+if( NOT MSVC AND NOT APPLE)
    target_link_libraries(qcore stdc++fs)
 endif()
 
