@@ -4,6 +4,8 @@ project(quoridor VERSION 1.0.0 LANGUAGES CXX)
 
 option(BUILD_GUI "Build UI" OFF)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS on)
+
 # Set the output folder where your program will be created
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/export/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/export/lib)
