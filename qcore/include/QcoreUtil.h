@@ -4,6 +4,7 @@
 #include <exception>
 #include <string>
 #include <iostream>
+#include <sstream>
 #include <iomanip>
 
 #include "Qcore_API.h"

@@ -8,6 +8,9 @@
 #ifdef WIN32
 #include <windows.h>
 const char * const SHARED_LIBRARY_EXT = ".dll";
+#elif __APPLE__
+const char * const SHARED_LIBRARY_EXT = ".dylib";
+#include <dlfcn.h>
 #else
 #include <dlfcn.h>
 const char * const SHARED_LIBRARY_EXT = ".so";
